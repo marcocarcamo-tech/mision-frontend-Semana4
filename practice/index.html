@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pokedex LaunchX</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex LaunchX</h1>
+        <div class="search">
+            <input onkeydown="enterKeyTrigger()" type="text" placeholder="Search Pokémon" id="pokeInput" name="pokeInput">
+            <a onclick="pressChangeButton()" class="search-icon-container"><img class="search-icon" src="../src/icons/search-free-icon-font.png"></a>
+        </div>
+    </header>
+
+    <section class="info-screen" >
+        <div class="main-info">
+            <div>
+                <span class="pokeId" id="pokeId"></span>
+                <span class="pokeName" id ="pokeName"></span>
+            </div>
+            
+            <span class="pokeType" id="pokeType"></span>
+        </div>
+
+        <div class="secondary-info">
+            <div class="img-pokemon">
+                <img src="" alt="pokeSprite" class="pokeSprite" id="pokeSprite">
+                
+                
+            </div>
+            
+            <div class="specific-info">
+                <div class="stats">
+                    <h2>Base Stats</h2>
+                    <div id="pokeStats" class="pokeStats"></div>
+                </div>
+                <div class="moves">
+                    <h2>Moves</h2>
+                    <div id="pokeMoves" class="pokeMoves"></div>
+                </div>
+            </div>        
+        </div>
+    </section>
+    
+
+    
+</body>
+<script src="./index.js"></script>
+</html>

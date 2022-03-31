@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background: rgb(229, 225, 194);
+}
+header{
+    box-sizing:border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(22, 56, 59);
+    min-width: 350px;
+    padding: 10px;
+    
+}
+h1{
+    margin: 0;
+}
+h2{
+    background: rgb(21, 53, 79);
+    color: white;
+    margin: 0;
+}
+.search{
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    padding: 2px;
+    
+    border: 2px solid;
+}
+.search input{
+    
+    border: 0 solid;
+}
+.search-icon-container {
+    background: white;
+}
+.search-icon{
+    width: 22px;
+    color: rgb(22, 56, 59);
+}
+.info-screen{
+    width: 100%;
+}
+.main-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background: rgb(21, 53, 79);
+    color: white;
+    
+}
+.secondary-info{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;;
+    
+}
+.img-pokemon{
+    width: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeSprite{
+    
+    width: 20%; 
+    height: auto;
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 170px;
+    min-height: 80px;
+
+    object-fit: cover;
+    background: rgb(205, 207, 195);
+    border: solid 15px rgb(241, 237, 231);
+    box-sizing: content-box;
+    
+}
+.specific-info{
+    width: 40%;
+}
+.pokeStats{
+    color: rgb(132, 136, 120);
+}
+.pokeMoves{
+    color: rgb(132, 136, 120);
+    max-height: 300px;
+    overflow: auto;
+}
