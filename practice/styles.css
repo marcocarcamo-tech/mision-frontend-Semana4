@@ -14,7 +14,7 @@ header{
     justify-content: space-between;
     align-items: center;
     color: rgb(22, 56, 59);
-    min-width: 350px;
+    
     padding: 10px;
     
 }
@@ -27,7 +27,7 @@ h2{
     margin: 0;
 }
 .search{
-    width: fit-content;
+    width: 30%;
     height: 30px;
     display: flex;
     padding: 2px;
@@ -35,7 +35,7 @@ h2{
     border: 2px solid;
 }
 .search input{
-    
+    width: 100%;
     border: 0 solid;
 }
 .search-icon-container {
@@ -112,3 +112,29 @@ h2{
         }
     }
 }
+
+@media (max-width:600px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search{
+    
+        width: 100%;
+    }
+  }
+
+@media (max-width:360px){
+    .secondary-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pokeSprite{
+        width:100%;
+    }
+    .specific-info{
+        margin-top: 16px;
+        width:100%;
+    }
+  }
